@@ -1,0 +1,36 @@
+{
+  "name": "trust-scorer",
+  "version": "0.1.0",
+  "description": "Deterministic 4-axis trust scoring for claims, plus a multi-agent consensus layer that keeps dissent instead of averaging it away.",
+  "license": "MIT",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "trust",
+    "provenance",
+    "verification",
+    "consensus",
+    "llm"
+  ],
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
