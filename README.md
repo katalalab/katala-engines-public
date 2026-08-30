@@ -123,3 +123,5 @@ their tests were carried over; nothing else from that project is included.
 ## License
 
 MIT — see [LICENSE](./LICENSE).
+
+- [Repository hygiene](.gitignore)
