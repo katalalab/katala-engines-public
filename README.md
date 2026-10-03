@@ -109,11 +109,17 @@ Read these before trusting the number.
 
 ## Tests
 
+Use Node.js 24 for development. The locked test tools require a newer Node.js
+version than the package's runtime minimum. The test suite and typecheck were
+verified with Node.js 24.21.0 after an offline install with scripts disabled.
+
 ```bash
-npm install
+npm ci --ignore-scripts # install locked versions without package install scripts
 npm test        # vitest
 npm run typecheck
 ```
+
+The tests use fixed claims and mock agents. They do not call an LLM provider.
 
 ## Provenance
 
