@@ -110,11 +110,11 @@ Read these before trusting the number.
 ## Tests
 
 Use Node.js 24 for development. The locked test tools require a newer Node.js
-version than the package's runtime minimum. These commands were verified with
-Node.js 24.21.0.
+version than the package's runtime minimum. The test suite and typecheck were
+verified with Node.js 24.21.0 after an offline install with scripts disabled.
 
 ```bash
-npm ci          # install the versions in package-lock.json
+npm ci --ignore-scripts # install locked versions without package install scripts
 npm test        # vitest
 npm run typecheck
 ```
